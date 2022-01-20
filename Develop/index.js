@@ -14,62 +14,61 @@ const questions = [
         name: 'description',
         message: 'Write a description about your project:'
     },
-    {
-        type: 'input',
-        name: 'installation',
-        message: 'Write installation instructions'
-    },
-    {
-        type: 'input',
-        name: 'usage',
-        message: 'What is the usage of your project?'
-    },
-    {
-        type: 'list',
-        message: 'Select the appropriate licesne for this project:',
-        name: 'license',
-        choices: ['license', 'options', 'here']
-    },
-    {
-        type: 'input',
-        name: 'tests',
-        message: 'Write tests:'
-    },
-    {
-        type: 'input',
-        name: 'questions',
-        message: 'Write a questions section:'
-    },
-    {
-        type: 'input',
-        name: 'user',
-        message: 'Enter your GitHub username:'
-    },
-    {
-        type: 'input',
-        name: 'email',
-        message: 'Enter your email address:'
-    },
+    // {
+    //     type: 'input',
+    //     name: 'installation',
+    //     message: 'Write installation instructions'
+    // },
+    // {
+    //     type: 'input',
+    //     name: 'usage',
+    //     message: 'What is the usage of your project?'
+    // },
+    // {
+    //     type: 'list',
+    //     message: 'Select the appropriate licesne for this project:',
+    //     name: 'license',
+    //     choices: ['license', 'options', 'here']
+    // },
+    // {
+    //     type: 'input',
+    //     name: 'tests',
+    //     message: 'Write tests:'
+    // },
+    // {
+    //     type: 'input',
+    //     name: 'questions',
+    //     message: 'Write a questions section:'
+    // },
+    // {
+    //     type: 'input',
+    //     name: 'user',
+    //     message: 'Enter your GitHub username:'
+    // },
+    // {
+    //     type: 'input',
+    //     name: 'email',
+    //     message: 'Enter your email address:'
+    // },
 ];
 
 inquirer
 .prompt(questions)
 .then(data => {
     console.log(data);
-    const fileName = `${data.name
-    .split(' ')
-    .join('')}.json`
+    const fileName = `${data.title}`;
+    console.log(fileName);
 
-    fs.writeFile(fileName, JSON.stringify(data, null, '\t'), err =>
-    err ? console.log(err) : console.log ('Success! View your ReadMe File.'));
+    // return fileName;
 });
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
+    // fs.writeFile('./README.md', page, err => {
+    //     if (err) throw err;
+// })
 
 }
-
-
 // TODO: Create a function to initialize app
 function init() { }
 
