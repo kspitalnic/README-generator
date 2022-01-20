@@ -59,7 +59,6 @@ inquirer
     const fileName = `${data.title}`;
     console.log(fileName);
 
-    // retrun fileName
 
     function writeToFile(fileName, data) {
         fs.writeFile(fileName, JSON.stringify(data, null, '\t'), err =>
@@ -73,11 +72,13 @@ inquirer
 
 // TODO: Create a function to write README file
 // function writeToFile(fileName, data) {
-//     fs.writeFile('./README.md', page, err => {
-//         if (err) throw err;
-// })
-
+//     fs.writeFile(fileName, JSON.stringify(data, null, '\t'), err =>
+//     err ? console.log(err) : console.log('Success!')
+//   );
 // }
+// writeToFile(fileName, data);
+
+// 
 // TODO: Create a function to initialize app
 function init() { }
 
