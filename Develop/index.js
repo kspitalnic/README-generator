@@ -62,7 +62,7 @@ function writeToFile(fileName, data) {
     const fileName = `${data.title}`;
     console.log(fileName);
     var answers = JSON.stringify(data);
-    fs.writeFile(fileName, answers, err =>
+    fs.writeFile(`${fileName}.md`, answers, err =>
     err ? console.log(err) : console.log('Success!')
   );
 })
