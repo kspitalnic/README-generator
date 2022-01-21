@@ -66,7 +66,7 @@ function init(){
 .prompt(questions)
 .then(answers => {
     console.log(answers);
-    writeToFile('Readme.md', generateMarkdown(answers));
+    writeToFile('README.md', generateMarkdown(answers));
 })
 }
 init();
