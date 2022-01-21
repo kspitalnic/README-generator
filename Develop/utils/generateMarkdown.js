@@ -34,8 +34,12 @@ else{
 function generateMarkdown(data) {
   return `# ${data.title}
 
-  ## Description
+  ${renderLicenseBadge(data.license)}
+  
+  ## Description   
+ 
   ${data.description}
+
   
   
   ## Table of Contents 
@@ -66,10 +70,10 @@ function generateMarkdown(data) {
   ${data.questions}
   
   ## GitHub 
-  ${data.user}
+  Link to Repo: https://github.com/${data.user}
   
   ## Email
-  ${data.email}
+  Please contact ${data.email} with any questions. 
 `;
 }
 
