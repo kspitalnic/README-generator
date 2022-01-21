@@ -1,13 +1,13 @@
-# readme
+# katie
 
   ## Description
-  d
+  
   
   
   ## Table of Contents 
   * [Installation](#installation)
   * [Usage](#usage)
- * [License](#license)
+ <br> * [License](#license)
   * [Tests](#tests)
   * [Questions](#questions)
   * [GitHub](#github)
@@ -15,24 +15,24 @@
   
   
   ## Installation 
-  d
+  
   
   ## Usage
-  f
+  
 
-  undefined
+  ## License MIT
 
   ##Badge
   ![License](https://img.shields.io/badge/License-MIT-lightblue.svg)
   
   ## Tests 
-  f
+  
   
   ## Questions
-  s
+  
   
   ## GitHub 
-  f
+  
   
   ## Email
-  sdf
+  
