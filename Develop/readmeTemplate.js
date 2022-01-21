@@ -1,43 +1,43 @@
-module.exports = answers => {
+module.exports = answers => 
     console.log(answers);
-}
-//  return `
-// # ${title}
 
-// ## Description
-// ${description}
+ return `
+# ${title}
 
-
-// ## Table of Contents 
-// * [Installation](#installation)
-// * [Usage](#usage)
-// * [License](#license)
-// * [Tests](#tests)
-// * [Questions](#questions)
-// * [GitHub](#github)
-// * [Email](#email)
+## Description
+${description}
 
 
-// ## Installation 
-// ${installation}
+## Table of Contents 
+* [Installation](#installation)
+* [Usage](#usage)
+* [License](#license)
+* [Tests](#tests)
+* [Questions](#questions)
+* [GitHub](#github)
+* [Email](#email)
 
-// ## Usage
-// ${usage}
 
-// ## License 
-// ${license}
+## Installation 
+${installation}
 
-// ## Tests 
-// ${tests}
+## Usage
+${usage}
 
-// ## Questions
-// ${questions}
+## License 
+${license}
 
-// ## GitHub 
-// ${user}
+## Tests 
+${tests}
 
-// ## Email
-// ${email}
+## Questions
+${questions}
 
-// `
-// };
+## GitHub 
+${user}
+
+## Email
+${email}
+
+`
+;
