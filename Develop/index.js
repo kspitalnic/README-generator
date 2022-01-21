@@ -18,7 +18,7 @@ const questions = [
     {
         type: 'input',
         name: 'installation',
-        message: 'Write installation instructions'
+        message: 'Write installation instructions:'
     },
     {
         type: 'input',
@@ -29,17 +29,17 @@ const questions = [
         type: 'list',
         message: 'Select the appropriate licesne for this project:',
         name: 'license',
-        choices: ['MIT', 'Apache 2.0', 'BSD 3', 'none']
+        choices: ['MIT', 'Apache_2.0', 'BSD_3', 'none']
     },
     {
         type: 'input',
         name: 'tests',
-        message: 'Write tests:'
+        message: 'Write tests for your application:'
     },
     {
         type: 'input',
         name: 'questions',
-        message: 'Write a questions section:'
+        message: 'Write any questions:'
     },
     {
         type: 'input',
